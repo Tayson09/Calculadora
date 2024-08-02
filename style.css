@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #004e92, #0072ff); /* Gradiente azul */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titulo h1 {
+    font-size: 3em;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+#display {
+    width: calc(100% - 20px);
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 2em;
+    text-align: right;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+button:active {
+    background: rgba(255, 255, 255, 0.7);
+    transform: scale(0.9);
+}
+
+button i {
+    pointer-events: none;
+}
+
+.limpar {
+    background: #e74c3c;
+    width: calc(100% - 10px);
+    height: 70px;
+}
+
+.limpar:hover {
+    background: #c0392b;
+}
+
+.limpar:active {
+    background: #a93226;
+}
+
+button:nth-child(4) {
+    background: #3498db; /* Azul mais claro */
+}
+
+button:nth-child(4):hover {
+    background: #2980b9;
+}
+
+button:nth-child(4):active {
+    background: #1f6f9f;
+}
+
+button:nth-child(8) {
+    background: #2ecc71; /* Verde claro para o igual */
+}
+
+button:nth-child(8):hover {
+    background: #27ae60;
+}
+
+button:nth-child(8):active {
+    background: #1e8a4e;
+}
