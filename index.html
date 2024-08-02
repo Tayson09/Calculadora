@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora Online</title>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>Calculadora Online</h1>
+        </div>
+        <div class="box">
+            <input type="text" id="display" readonly>
+            <div class="linha">
+                <button onclick="adicionarAoDisplay('7')">7</button>
+                <button onclick="adicionarAoDisplay('8')">8</button>
+                <button onclick="adicionarAoDisplay('9')">9</button>
+                <button onclick="adicionarAoDisplay('/')"><i class="fas fa-divide"></i></button>
+            </div>
+            <div class="linha">
+                <button onclick="adicionarAoDisplay('4')">4</button>
+                <button onclick="adicionarAoDisplay('5')">5</button>
+                <button onclick="adicionarAoDisplay('6')">6</button>
+                <button onclick="adicionarAoDisplay('*')"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="linha">
+                <button onclick="adicionarAoDisplay('1')">1</button>
+                <button onclick="adicionarAoDisplay('2')">2</button>
+                <button onclick="adicionarAoDisplay('3')">3</button>
+                <button onclick="adicionarAoDisplay('-')"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="linha">
+                <button onclick="adicionarAoDisplay('0')">0</button>
+                <button onclick="adicionarAoDisplay('.')">.</button>
+                <button onclick="calcular()"><i class="fas fa-equals"></i></button>
+                <button onclick="adicionarAoDisplay('+')"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="linha">
+                <button class="limpar" onclick="limparDisplay()"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
